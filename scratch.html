@@ -1,0 +1,98 @@
+<head><link rel="stylesheet" href="css/scratch.css"></head>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scratch Page</title>
+    <link rel="stylesheet" href="css/scratch.css">
+</head>
+
+<body>
+
+    <div id="top">
+        <h1>My Taste</h1>
+        <div class="top-actions">
+            <a href="#gallery">Gallery</a>
+            <a href="app.html">App</a>
+        </div>
+    </div>
+
+    <div id="section1">
+        <h2>What I Like</h2>
+        <ol>
+            <li>Content styles
+                <ul>
+                    <li>Minimal</li>
+                    <li>Cinematic</li>
+                    <li>Story-driven</li>
+                </ul>
+            </li>
+            <li>Platforms
+                <ul>
+                    <li>Pinterest</li>
+                    <li>Instagram</li>
+                    <li>Tik Tok</li>
+                    <li>Youtube</li>
+                </ul>
+            </li>
+        </ol>
+
+        <p class="video-note"><em>Check out some of my current inspiration</em></p>
+
+        <div id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-carousel">
+                <div class="gallery-slot">
+                    <img src="assets/img/GoodBook-Extinction.jpg" alt="The Extinction of Experience book on display">
+                </div>
+                <div class="gallery-slot">
+                    <img src="assets/img/Raggamuffin-Tshirtcloseup.jpg" alt="Close-up of a graphic T-shirt">
+                </div>
+                <div class="gallery-slot">
+                    <img src="assets/img/HugeSunnies-FaceMask.jpg" alt="Person wearing oversized sunglasses and a face mask">
+                </div>
+                <div class="gallery-slot">
+                    <img src="assets/img/OldHoneys-FrontPorch.jpg" alt="Older couple sitting together on a front porch">
+                </div>
+                <div class="gallery-slot">
+                    <img src="assets/img/Magstyle-Dining.jpg" alt="Magazine-style dining room interior">
+                </div>
+            </div>
+        </div>
+
+        <div id="video">
+            <h2>Video</h2>
+            <div class="media-frame">
+                <iframe
+                    width="300"
+                    height="200"
+                    src="https://www.youtube.com/embed/1sYohzlazpE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div id="data-vis">
+            <h2>Data Vis</h2>
+            <div class="tableau-embed-container">
+                <div class="tableau-placeholder">
+                    <tableau-viz
+                        class="tableau-frame"
+                        id="tableauViz"
+                        src="https://public.tableau.com/shared/FP7SJHTNT?:showVizHome=no"
+                        toolbar="hidden"
+                        hide-tabs
+                        device="desktop">
+                    </tableau-viz>
+                </div>
+            </div>
+            <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+        </div>
+    </div>
+
+    <a href="index.html">Back to Home</a>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Content Idea Generator | Londyn Coonradt</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .app-shell {
+                min-height: 100vh;
+                padding: 8rem 1rem 4rem;
+                background: linear-gradient(180deg, rgba(157, 184, 204, 0.22) 0%, rgba(248, 249, 250, 0.96) 24%, #ffffff 100%);
+            }
+
+            .app-card {
+                max-width: 760px;
+                margin: 0 auto;
+                padding: 3rem 2rem;
+                border-radius: 1rem;
+                background-color: #fff;
+                box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.08);
+                text-align: center;
+            }
+
+            .app-eyebrow {
+                margin-bottom: 0.75rem;
+                color: #7f9cb3;
+                font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                font-size: 0.85rem;
+                font-weight: 700;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+            }
+
+            .app-card h1 {
+                margin-bottom: 1rem;
+            }
+
+            .app-card p {
+                max-width: 38rem;
+                margin: 0 auto 2rem;
+                color: #6c757d;
+            }
+
+            .app-actions {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .app-return {
+                margin-top: 1.5rem;
+            }
+
+            #idea {
+                min-height: 4rem;
+                margin: 2rem 0 0;
+                color: #212529;
+                font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                font-size: 1.35rem;
+                font-weight: 700;
+            }
+
+            @media (max-width: 700px) {
+                .app-shell {
+                    padding-top: 7rem;
+                }
+
+                .app-card {
+                    padding: 2.25rem 1.25rem;
+                }
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 navbar-shrink" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Londyn Coonradt</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="scratch.html">My Taste</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#connect">Connect</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="app-shell">
+            <section class="app-card">
+                <div class="app-eyebrow">Web App</div>
+                <h1>Content Idea Generator</h1>
+                <hr class="divider" />
+                <p>Click for a fresh content prompt</p>
+                <div class="app-actions">
+                    <button class="btn btn-primary btn-xl" onclick="generateIdea()">Give Me an Idea</button>
+                </div>
+                <p id="idea"></p>
+                <div class="app-return">
+                    <a class="btn btn-light btn-xl" href="scratch.html">Back to My Taste</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Londyn Coonradt</div></div>
+        </footer>
+
+        <script>
+            function generateIdea() {
+                const ideas = [
+                    "Day in my life vlog",
+                    "Outfit inspo reel",
+                    "GRWM for class",
+                    "Aesthetic coffee shop montage",
+                    "What I eat in a day",
+                    "Photo dump edit tutorial",
+                    "Morning routine",
+                    "Study with me"
+                ];
+
+                const random = Math.floor(Math.random() * ideas.length);
+                document.getElementById("idea").innerText = ideas[random];
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
